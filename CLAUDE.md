@@ -44,9 +44,9 @@ The webhook responds `200` synchronously and the bot handler runs fire-and-forge
 
 ### Claude usage
 
-`ClaudeService` wraps `@anthropic-ai/sdk` with three methods: `chat`, `generateCv`, `bcsMcq`. Model is `claude-sonnet-4-6` (constant at top of `claude.service.ts`). The system prompt is in Bangla and tells Claude to reply in Bangla — don't translate it.
+`ClaudeService` wraps `@anthropic-ai/sdk` with three methods: `chat`, `generateCv`, `bcsMcq`. Model is `claude-haiku-4-5-20251001` (constant at top of `claude.service.ts`). The system prompt is in Bangla and tells Claude to reply in Bangla — don't translate it.
 
-The original spec (`INITIAL.md`) named `claude-sonnet-4-20250514`; that was outdated. The current Sonnet alias is `claude-sonnet-4-6`. If you change the model, update the README too.
+The original spec (`INITIAL.md`) named `claude-sonnet-4-20250514`; we run on Haiku 4.5 (pinned ID `claude-haiku-4-5-20251001`) because the bot's three tasks — short Bangla menu replies, BCS MCQ generation, and a few-line CV summary — are well within Haiku's capability and benefit from its lower latency and ~3× lower cost. If you bump to Sonnet (`claude-sonnet-4-6`) for higher-quality output, update the README too.
 
 ### Bun-specific notes
 

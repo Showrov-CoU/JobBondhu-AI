@@ -6,10 +6,10 @@ Facebook Messenger bot for Bangladeshi job seekers — built with NestJS + Anthr
 
 - Bangla-first menu (job circular, AI CV builder, interview prep, BCS practice, AI chat)
 - In-memory CV builder state machine (name → phone → email → education → experience → skills → AI summary)
-- Claude `claude-sonnet-4-6` for free-form chat, CV generation, and BCS MCQ questions
+- Claude `claude-haiku-4-5-20251001` for free-form chat, CV generation, and BCS MCQ questions
 - Facebook Graph API v19.0 for sending replies
 
-> The original spec referenced `claude-sonnet-4-20250514`; that ID was outdated, so the implementation uses the current Sonnet alias `claude-sonnet-4-6`. Change `MODEL` in `src/claude/claude.service.ts` if you need a different model.
+> The original spec referenced `claude-sonnet-4-20250514`; the implementation runs on the pinned Haiku 4.5 ID `claude-haiku-4-5-20251001` for lower latency and cost. Change `MODEL` in `src/claude/claude.service.ts` if you need a more capable (and pricier) model — e.g. `claude-sonnet-4-6`.
 
 ## Setup
 

@@ -2,7 +2,7 @@ import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import Anthropic from '@anthropic-ai/sdk';
 
-const MODEL = 'claude-sonnet-4-6';
+const MODEL = 'claude-haiku-4-5-20251001';
 
 const SYSTEM_PROMPT =
   'তুমি JobBondhu AI। বাংলাদেশের job seekers ও students দের help করো। সবসময় বাংলায় reply করো। Short ও helpful উত্তর দাও। চাকরি, CV, interview, BCS সম্পর্কে expert advice দাও।';
